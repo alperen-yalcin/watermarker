@@ -5,7 +5,7 @@ os.environ["IMAGEMAGICK_BINARY"] = "/opt/homebrew/bin/magick"
 
 video = VideoFileClip("./video/watermarked.mp4")
 
-watermark = TextClip("@geceyefisildayan", fontsize=40, color="white", font="Arial-Bold")
+watermark = TextClip("@watermark", fontsize=40, color="white", font="Arial-Bold")
 watermark = watermark.set_duration(video.duration)  
 watermark = watermark.set_pos(("right","bottom"))   
 watermark = watermark.set_opacity(0.6)             
